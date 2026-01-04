@@ -9,7 +9,7 @@ import Address from '../views/Address.vue'   // 地址页
 import OrderList from '../views/OrderList.vue' // 订单列表页
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     { path: '/', redirect: '/login' },
     { path: '/login', component: Login },
