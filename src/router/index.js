@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Login from '../views/Login.vue'       // 登录页
 import Register from '../views/Register.vue' // 注册页（必须存在）
 import Home from '../views/Home.vue'         // 首页
