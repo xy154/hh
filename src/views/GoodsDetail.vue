@@ -7,7 +7,7 @@
         <!-- 商品图片 -->
         <div style="flex: 0 0 400px;">
           <img 
-            :src="`/assets/${goodsInfo.img}`" 
+            :src="`${import.meta.env.BASE_URL}assets/${goodsInfo.img}`" 
             style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;" 
             :alt="goodsInfo.name"
           />

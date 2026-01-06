@@ -23,7 +23,7 @@
         </div>
         <!-- 订单商品 -->
         <div v-for="item in order.goods" :key="item.id" style="display: flex; align-items: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #eee;">
-          <img :src="`/assets/${item.img}`" style="width: 60px; height: 60px; object-fit: cover; margin-right: 15px; border-radius: 4px;" />
+          <img :src="`${import.meta.env.BASE_URL}assets/${item.img}`" style="width: 60px; height: 60px; object-fit: cover; margin-right: 15px; border-radius: 4px;" />
           <div style="flex: 1;">
             <p>{{ item.name }}</p>
             <p style="font-size: 14px; color: #666;">x{{ item.count }}</p>

@@ -39,7 +39,7 @@
         <div style="margin-bottom: 20px;">
           <h3 style="font-size: 18px; color: #333; margin-bottom: 15px; font-weight: 600;">商品清单</h3>
           <div v-for="goods in order.goods" :key="goods.id" style="display: flex; align-items: center; padding: 10px 0; border-bottom: 1px dashed #eee;">
-            <img :src="`/assets/${goods.img}`" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 15px;" />
+            <img :src="`${import.meta.env.BASE_URL}assets/${goods.img}`" style="width: 60px; height: 60px; object-fit: cover; border-radius: 4px; margin-right: 15px;" />
             <div style="flex: 1;">
               <p style="font-size: 16px; color: #333; margin: 0;">{{ goods.name }}</p>
               <p style="font-size: 14px; color: #999; margin: 5px 0 0 0;">x{{ goods.count }}</p>

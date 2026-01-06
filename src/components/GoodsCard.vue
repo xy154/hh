@@ -6,7 +6,7 @@
       style="text-decoration: none; color: inherit; display: block;"
     >
       <img 
-        :src="`/assets/${goods.img}`" 
+        :src="`${import.meta.env.BASE_URL}assets/${goods.img}`" 
         style="width: 100%; height: 200px; object-fit: cover;" 
         :alt="goods.name" 
       />

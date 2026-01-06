@@ -9,7 +9,7 @@
           <!-- 商品卡片（跳详情页） -->
           <div class="card-body" @click="$router.push(`/goods/detail/${goods.id}`)">
             <!-- 恢复原图尺寸 -->
-            <img :src="`/assets/${goods.img}`" :alt="goods.name" class="goods-img" />
+            <img :src="`${import.meta.env.BASE_URL}assets/${goods.img}`" :alt="goods.name" class="goods-img" />
             <div class="goods-info">
               <h3 class="goods-name">{{ goods.name }}</h3>
               <p class="goods-desc">{{ goods.desc }}</p>
