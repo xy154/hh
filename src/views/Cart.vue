@@ -26,7 +26,7 @@
         >
           <!-- 商品图片 -->
           <img 
-            :src="`${import.meta.env.BASE_URL}assets/${item.img}`" 
+            :src="$baseUrl + 'assets/' + item.img" 
             style="width: 80px; height: 80px; object-fit: cover; margin-right: 20px; border-radius: 6px;" 
             :alt="item.name"
           />

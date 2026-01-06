@@ -23,7 +23,7 @@
         <div class="card">
           <h3 class="title">订单商品</h3>
           <div v-for="item in cartList" :key="item.id" style="display: flex; padding: 8px 0; border-bottom: 1px solid #eee;">
-            <img :src="`${import.meta.env.BASE_URL}assets/${item.img}`" style="width: 40px; height: 40px; object-fit: cover; margin-right: 8px;" />
+            <img :src="$baseUrl + 'assets/' + item.img" style="width: 40px; height: 40px; object-fit: cover; margin-right: 8px;" />
             <div style="flex: 1;">
               <p>{{ item.name }}</p>
               <p style="color: #666; font-size: 14px;">x{{ item.count }}</p>
